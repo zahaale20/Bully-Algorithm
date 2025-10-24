@@ -6,14 +6,6 @@ A Python implementation of the Bully Algorithm for distributed leader election w
 
 This project implements the classic Bully Algorithm, which enables a group of distributed processes to elect a leader. When the current leader fails, the algorithm ensures that the process with the highest ID becomes the new leader. The implementation includes a Group Coordination Daemon (GCD) for membership management and periodic health checks (PROBE messages) for failure detection.
 
-## Features
-
-- **Leader Election**: Automatic election of the highest-priority process as leader
-- **Failure Detection**: Periodic PROBE messages to detect leader failures
-- **Automatic Recovery**: Failed leader triggers new election with updated membership
-- **Group Coordination**: Centralized GCD manages group membership
-- **Thread-Safe**: Concurrent message handling with proper synchronization
-
 ## Architecture
 
 The system consists of two main components:
